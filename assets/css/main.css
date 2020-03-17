@@ -1785,6 +1785,7 @@ input, select, textarea {
 	}
 
 	header.major h2 {
+		text-align: center;
 		color: #6b82b8;
 		font-size: 3.5em;
 	}
@@ -2016,6 +2017,38 @@ input, select, textarea {
 		border-bottom: none;
 		position: relative;
 	}
+
+	.icon:hover {
+		background-color: #777777;
+		border: 5px solid #6b82b8;
+		border-radius: 10%;
+		padding: 0% 5%;
+		color: white;
+
+
+
+		transition: 0.70s;
+		-webkit-transition: 0.70s;
+		-moz-transition: 0.70s;
+		-ms-transition: 0.70s;
+		-o-transition: 0.70s;
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+		-o-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		transform: rotate(3deg);
+		animation: .8s shake infinite alternate;
+	}
+
+	@keyframes shake {
+		0% { transform: skewX(-15deg); }
+		5% { transform: skewX(15deg); }
+		10% { transform: skewX(-15deg); }
+		15% { transform: skewX(15deg); }
+		20% { transform: skewX(0deg); }
+		100% { transform: skewX(0deg); }  
+	  }
+
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -2422,6 +2455,7 @@ input, select, textarea {
 		list-style: none;
 		padding-left: 0;
 	}
+	
 
 		ul.icons li {
 			display: inline-block;
